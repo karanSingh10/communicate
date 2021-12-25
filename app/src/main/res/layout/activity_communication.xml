@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".communicationpack.communication">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2238B1"
+android:gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_home_24"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/username"
+        android:layout_above="@+id/writemessage"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="5dp"/>
+
+    <EditText
+        android:id="@+id/writemessage"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:hint="Message..."
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recyclerdynamicbg"/>
+
+    <Button
+        android:id="@+id/sendmessage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_baseline_send_24"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

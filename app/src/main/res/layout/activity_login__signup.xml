@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Signup">
+
+    <EditText
+        android:id="@+id/communicatenumber"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+    android:background="@drawable/recyclerdynamicbg"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Mobile"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        android:textColor="#2E44BC"/>
+
+    <EditText
+        android:id="@+id/communicateotp"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@drawable/recyclerdynamicbg"
+        android:layout_below="@+id/communicatename"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="OTP"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        android:textColor="#2E44BC"/>
+
+    <EditText
+        android:id="@+id/communicatename"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@drawable/recyclerdynamicbg"
+        android:layout_below="@+id/communicatenumber"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Name"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        android:textColor="#2E44BC"/>
+
+<Button
+    android:id="@+id/getotp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="OTP"
+    android:background="@drawable/ic_baseline_call_to_action_24"
+    android:layout_below="@+id/communicateotp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signin"
+        android:background="@drawable/ic_baseline_call_to_action_24"
+        android:layout_below="@+id/communicateotp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>
